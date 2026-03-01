@@ -1,20 +1,111 @@
-.ImgLogo{
-  width: 50px;
-  display: flex;
-  
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.header{
-  
-  height:50 px ;
+.header {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e5e535;
+  background: white;
+}
+.headerInner{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-ul{
+.ImgLogo{
+  display: flex;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu{
+  list-style: none;
   display: flex;
   gap: 20px;
-  align-items: end;
-  
+  align-items: center;
+}
+
+.menu li {
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+
+}
+
+.menu li:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+.body{
+  display: flex;
+  flex-wrap: wrap;   /* allows wrapping on smaller screens */
+  gap: 20px;         /* spacing between cards */
+  padding: 20px;
+}
+
+.res-card {
+  width: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid gray;
+}
+
+/* Hover effect like Swiggy */
+.res-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-container {
+  position: relative;
+}
+
+.res-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Rating badge on image */
+.rating-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.res-des {
+  padding: 12px;
+}
+
+.res-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.res-cuisine {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.res-time {
+  font-size: 14px;
+  font-weight: 500;
 }
