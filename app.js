@@ -21,6 +21,21 @@ const Header = () =>{
   )
 }
 
+const SearchBar = () => {
+  return (
+    <div className="search">
+      <div className="searchBox">
+        <input
+          type="text"
+          className="searchInput"
+          placeholder="Search for restaurants and food"
+        />
+        <span className="searchIcon">🔍</span>
+      </div>
+    </div>
+  );
+};
+
 const restaurant = {
   name: "Al Fahad",
   cuisine: "Biryani, Mughal, North Indian",
@@ -60,12 +75,22 @@ const ResCard = ({ resData }) => {
 const Body = () =>{
   return (
   <div className="body">
+      <SearchBar/>
+    
+  <div className="card-container">
     <ResCard resData={restaurant}/>
     <ResCard resData={restaurant}/>
     <ResCard resData={restaurant}/>
     <ResCard resData={restaurant}/>
+    <ResCard resData={restaurant}/>
+    <ResCard resData={restaurant}/>
+    <ResCard resData={restaurant}/>
+    <ResCard resData={restaurant}/>
+    <ResCard resData={restaurant}/>
+    <ResCard resData={restaurant}/>
+   
 
-
+  </div>
   </div>
   )
 }
