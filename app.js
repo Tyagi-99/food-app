@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
+import { restaurantList,CDN_URL } from "./mockData"
 
 
 const Header = () =>{
@@ -36,14 +37,7 @@ const SearchBar = () => {
   );
 };
 
-const restaurant = {
-  name: "Al Fahad",
-  cuisine: "Biryani, Mughal, North Indian",
-  location: "Meerut",
-  rating: "4.3",
-  deliveryTime: "44 mins",
-  image:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/9ae6376f73c5533cf9edf1f96c051d67"
-};
+
 
 const ResCard = ({ resData }) => {
   return (
@@ -51,7 +45,7 @@ const ResCard = ({ resData }) => {
       <div className="img-container">
         <img
           className="res-img"
-          src={resData.image}
+          src={CDN_URL + resData.imageId}
           alt={resData.name}
         />
         <div className="rating-badge">⭐ {resData.rating}</div>
@@ -60,11 +54,12 @@ const ResCard = ({ resData }) => {
       <div className="res-des">
         <h3 className="res-name">{resData.name}</h3>
         <p className="res-cuisine">
-          {resData.cuisine}, {resData.location}
+          {resData.cuisines.join(", ")}.{resData.areaName}
         </p>
         <p className="res-time">
-          {resData.deliveryTime}
+          {resData.deliveryTime}mins
         </p>
+        <p className="rec-cost">{resData.costForTwo}</p>
       </div>
     </div>
   );
@@ -78,16 +73,9 @@ const Body = () =>{
       <SearchBar/>
     
   <div className="card-container">
-    <ResCard resData={restaurant}/>
-    <ResCard resData={restaurant}/>
-    <ResCard resData={restaurant}/>
-    <ResCard resData={restaurant}/>
-    <ResCard resData={restaurant}/>
-    <ResCard resData={restaurant}/>
-    <ResCard resData={restaurant}/>
-    <ResCard resData={restaurant}/>
-    <ResCard resData={restaurant}/>
-    <ResCard resData={restaurant}/>
+    {restaurantList.map((res)=>(
+      <ResCard key={res.id} resData={res}/>
+    ))}
    
 
   </div>

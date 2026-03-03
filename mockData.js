@@ -1,0 +1,86 @@
+export const CDN_URL =
+  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+
+export const restaurantList = [
+  {
+    id: "71911",
+    name: "Riyaz Biryani Corner",
+    imageId: "qkpkgwju2cyntw5llwbt",
+    cuisines: ["North Indian", "Mughlai"],
+    rating: 4.3,
+    deliveryTime: 29,
+    costForTwo: "₹450 for two",
+    areaName: "Shakarpur",
+  },
+  {
+    id: "1053751",
+    name: "Honest Bowl",
+    imageId:
+      "FOOD_CATALOG/IMAGES/CMS/2025/7/24/2875df7a-1a18-4d34-bfb4-cff3bd67e44e_0f07b466-4323-4766-b759-929ce6e015fb.jpeg",
+    cuisines: ["North Indian", "High Protein", "Biryani"],
+    rating: 4.0,
+    deliveryTime: 19,
+    costForTwo: "₹200 for two",
+    areaName: "Connaught Place",
+  },
+  {
+    id: "381240",
+    name: "Andhra Bhawan Canteen",
+    imageId: "pzt6osezod85qvmavrii",
+    cuisines: ["Andhra", "South Indian", "Indian"],
+    rating: 4.6,
+    deliveryTime: 16,
+    costForTwo: "₹400 for two",
+    areaName: "Janpath",
+  },
+  {
+    id: "999580",
+    name: "Thalaiva Biryani",
+    imageId:
+      "FOOD_CATALOG/IMAGES/CMS/2025/7/2/8bf3bbe1-bccf-4067-9340-4ef0ce3caf28_4928d658-b637-4deb-8c57-b975167aaf4e.jpeg",
+    cuisines: [
+      "Biryani",
+      "Mughlai",
+      "Lucknowi",
+      "Hyderabadi",
+      "Kebabs",
+      "Desserts",
+      "Beverages",
+    ],
+    rating: 4.2,
+    deliveryTime: 20,
+    costForTwo: "₹250 for two",
+    areaName: "Connaught Place",
+  },
+  {
+    id: "750696",
+    name: "Kerala Coastal Restaurant",
+    imageId: "9ae6376f73c5533cf9edf1f96c051d67",
+    cuisines: ["South Indian", "Chinese", "Seafood", "North Indian", "Biryani"],
+    rating: 4.1,
+    deliveryTime: 33,
+    costForTwo: "₹200 for two",
+    areaName: "CHANKYA PURI",
+  },
+  {
+    id: "1257079",
+    name: "Dum Safar Biryani",
+    imageId:
+      "FOOD_CATALOG/IMAGES/CMS/2025/8/19/df808c26-afab-4d22-8a55-ac265460e318_757a05a0-c746-41fe-87e3-4a18002ed0fa.png",
+    cuisines: ["Biryani", "Hyderabadi", "Kebabs", "North Indian", "barbeque"],
+    rating: 4.5,
+    deliveryTime: 20,
+    costForTwo: "₹500 for two",
+    areaName: "Connaught Place",
+  },
+  {
+    id: "667127",
+    name: "Mashaallah Chicken Corner",
+    imageId: "8fd7d2aeef64374de8b7ccbe80e77c45",
+    cuisines: ["Indian", "Biryani"],
+    rating: 4.3,
+    deliveryTime: 23,
+    costForTwo: "₹250 for two",
+    areaName: "Paharganj",
+  },
+];
